@@ -10,7 +10,7 @@ const server = http.createServer(app);
 // Configure CORS for Socket.io
 const io = socketIo(server, {
   cors: {
-    origin: ["http://localhost:4200", "http://localhost:4201", "https://mubanai.github.io/helpmate", ],
+    origin: ["http://localhost:4200", "http://localhost:4201", "https://mubanai.github.io/helpmate"],
     methods: ["GET", "POST"],
     credentials: true
   },
@@ -19,7 +19,7 @@ const io = socketIo(server, {
 
 // Enable CORS for Express
 app.use(cors({
-  origin: ["http://localhost:4200", "http://localhost:4201", "https://localhost:4201"],
+  origin: ["http://localhost:4200", "http://localhost:4201", "https://mubanai.github.io/helpmate"],
   credentials: true
 }));
 
